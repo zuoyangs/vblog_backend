@@ -1,4 +1,4 @@
-module github.com/zuoyangs/vblog
+module github.com/zuoyangs/vblog_backend
 
 go 1.19
 
