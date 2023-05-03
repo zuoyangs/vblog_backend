@@ -2,7 +2,11 @@ module github.com/zuoyangs/vblog_backend
 
 go 1.19
 
-require github.com/gin-gonic/gin v1.9.0
+require (
+	github.com/BurntSushi/toml v1.2.1
+	github.com/caarlos0/env/v8 v8.0.0
+	github.com/gin-gonic/gin v1.9.0
+)
 
 require (
 	github.com/bytedance/sonic v1.8.7 // indirect
