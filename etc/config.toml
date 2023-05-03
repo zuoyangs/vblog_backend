@@ -6,8 +6,8 @@ host = "localhost"
 port = "8080"
 
 [mysql]
-host = "rm-uf6cz0p99qe3222w00o.mysql.rds.aliyuncs.com"
+host = ""
 port = "3306"
 database = "vblog"
-username = "vblog_rw"
-password = "HqRijwkk#h$vXnfU"
+username = ""
+password = ""

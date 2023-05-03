@@ -48,11 +48,11 @@ type http struct {
 
 func newDefaultMySQL() *mysql {
 	return &mysql{
-		HOST:     "rm-uf6cz0p99qe3222w00o.mysql.rds.aliyuncs.com",
+		HOST:     "",
 		PORT:     "3306",
 		DATABASE: "vblog",
-		USERNAME: "vblog_rw",
-		PASSWORD: "HqRijwkk#h$vXnfU",
+		USERNAME: "",
+		PASSWORD: "",
 	}
 }
 
