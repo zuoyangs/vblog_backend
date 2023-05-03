@@ -1,9 +1,9 @@
 package impl
 
 import (
-	"context"
+	"database/sql"
 
-	"github.com/zuoyangs/vblog_backend/blog"
+	"github.com/zuoyangs/vblog_backend/conf"
 )
 
 // 构造函数，返回一个 Impl 实例
@@ -11,11 +11,15 @@ func NewImpl() *Impl {
 	return &Impl{}
 }
 
-// Impl 结构体
-type Impl struct{}
+// 负责实现 Blog Service
+type Impl struct {
+	db *sql.DB
+}
 
-// CreateBlog 方法，接收一个 ctx 和 req 参数，返回 blog 和 error
-func (i *Impl) CreateBlog(ctx context.Context, req *blog.CreateBlogRequest) (*blog.Blog, error) {
+//当这个对象初始化时，会获取该对象需要的依赖
+//需要db这个依赖，从配置文件中获取
 
-	return nil, nil
+func (i *Impl) Init() error {
+	i.db = conf.C().MySQL.GetDB()
+	return nil
 }
